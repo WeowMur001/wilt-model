@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wilt Viewer</title>
+    <title>Live2D Viewer</title>
     <script src="https://unpkg.com/live2d-widget/lib/L2Dwidget.min.js"></script>
     <style>
-      body {
-        margin: 0;
-        background: transparent;
-        overflow: hidden;
-      }
+      body { margin: 0; background: transparent; overflow: hidden; }
     </style>
   </head>
   <body>
-    <div id="wilt2d" style="
+    <div id="model" style="
       position: fixed;
       bottom: 0;
       left: 0;
@@ -24,7 +20,7 @@
     <script>
       L2Dwidget.init({
         model: {
-          jsonPath: "model3.json",
+          jsonPath: "runtime/rice_pro_t03.model3.json",
         },
         display: {
           position: "left",
